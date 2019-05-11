@@ -194,13 +194,13 @@ final class BackgroundWriter
 			if ($x_repeat) {
 				$this->writer->write(sprintf('/XStep %.3F', $orig_w));
 			} else {
-				$this->writer->write(sprintf('/XStep %d', 99999));
+				$this->writer->write(sprintf('/XStep %d', 512));
 			}
 
 			if ($y_repeat) {
 				$this->writer->write(sprintf('/YStep %.3F', $orig_h));
 			} else {
-				$this->writer->write(sprintf('/YStep %d', 99999));
+				$this->writer->write(sprintf('/YStep %d', 512));
 			}
 
 			if ($itype === 'svg' || $itype === 'wmf') {
